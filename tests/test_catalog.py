@@ -15,9 +15,9 @@ def load():
     with open(TOOLS) as f:
         return json.load(f)
 
-def test_json_valido_y_22_fichas():
+def test_json_valido_y_60_fichas():
     tools = load()
-    assert 15 <= len(tools) <= 40, "núcleo mínimo 15 fichas"
+    assert 15 <= len(tools) <= 120, "catálogo ampliado hasta 60+"
 
 def test_ids_unicos():
     tools = load()
